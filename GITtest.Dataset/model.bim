@@ -2525,18 +2525,6 @@
             "expression": "SUM(FactInternetSales[SalesAmount])",
             "formatString": "\"£\"#,0.###############;-\"£\"#,0.###############;\"£\"#,0.###############",
             "lineageTag": "d11822e0-7b36-4b12-9b88-c2ad57718138"
-          },
-          {
-            "name": "_Total Freight",
-            "annotations": [
-              {
-                "name": "PBI_FormatHint",
-                "value": "{\"currencyCulture\":\"en-GB\"}"
-              }
-            ],
-            "expression": "SUM(FactInternetSales[Freight])",
-            "formatString": "\"£\"#,0.###############;-\"£\"#,0.###############;\"£\"#,0.###############",
-            "lineageTag": "7e0285f2-375b-4fd3-a2d2-d84aad7721bc"
           }
         ],
         "partitions": [

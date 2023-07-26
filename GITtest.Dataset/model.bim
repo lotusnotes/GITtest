@@ -2266,7 +2266,7 @@
             "annotations": [
               {
                 "name": "SummarizationSetBy",
-                "value": "Automatic"
+                "value": "User"
               },
               {
                 "name": "PBI_FormatHint",
@@ -2277,7 +2277,7 @@
             "formatString": "\"£\"#,0.###############;-\"£\"#,0.###############;\"£\"#,0.###############",
             "lineageTag": "5d37bab2-df24-4d1b-9d72-9e0b9110cb7a",
             "sourceColumn": "Freight",
-            "summarizeBy": "sum"
+            "summarizeBy": "none"
           },
           {
             "name": "OrderDateKey",
@@ -2372,7 +2372,7 @@
             "annotations": [
               {
                 "name": "SummarizationSetBy",
-                "value": "Automatic"
+                "value": "User"
               },
               {
                 "name": "PBI_FormatHint",
@@ -2383,7 +2383,7 @@
             "formatString": "\"£\"#,0.###############;-\"£\"#,0.###############;\"£\"#,0.###############",
             "lineageTag": "3bff0a44-dbcc-4101-92c6-58714af0bbf6",
             "sourceColumn": "SalesAmount",
-            "summarizeBy": "sum"
+            "summarizeBy": "none"
           },
           {
             "name": "SalesOrderLineNumber",
@@ -2525,6 +2525,18 @@
             "expression": "SUM(FactInternetSales[SalesAmount])",
             "formatString": "\"£\"#,0.###############;-\"£\"#,0.###############;\"£\"#,0.###############",
             "lineageTag": "d11822e0-7b36-4b12-9b88-c2ad57718138"
+          },
+          {
+            "name": "_Total Freight",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"currencyCulture\":\"en-GB\"}"
+              }
+            ],
+            "expression": "SUM(FactInternetSales[Freight])",
+            "formatString": "\"£\"#,0.###############;-\"£\"#,0.###############;\"£\"#,0.###############",
+            "lineageTag": "7e0285f2-375b-4fd3-a2d2-d84aad7721bc"
           }
         ],
         "partitions": [
